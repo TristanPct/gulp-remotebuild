@@ -78,9 +78,9 @@ function build(options = DEFAULT_TACO_REMOTE_CLIENT_OPTIONS) {
       stopReport();
       tar.finalize();
 
-      options.cordovaVersion = cordovaVersion;
+      options.cordovaVersion = cordovaVersion || options.cordovaVersion;
 
-      gutil.log(`Building on ${ colors.magenta(options.hostname) }:${ colors.magenta(options.port) } against Cordova version ${ colors.green(cordovaVersion) }`);
+      gutil.log(`Building on ${ colors.magenta(options.hostname) }:${ colors.magenta(options.port) } against Cordova version ${ colors.green(options.cordovaVersion) }`);
 
       const client = new TacoRemoteClient(options);
 

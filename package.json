@@ -1,6 +1,6 @@
 {
   "name": "gulp-remotebuild",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gulp plug-in to build Cordova iOS app remotely using Visual Studio Tools for Apache Cordova",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/compulim/gulp-remotebuild.git"
+    "url": "https://github.com/TristanPct/gulp-remotebuild.git"
   },
   "keywords": [
     "cordova",
